@@ -1,0 +1,318 @@
+
+.pagina-avisos {
+
+    width: 95%;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 25px 15px;
+
+}
+
+/* PRESENTACIÓN */
+
+.presentacion-avisos {
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr 120px;
+
+    align-items: center;
+
+    gap: 25px;
+
+    text-align: center;
+
+    padding: 25px 10px;
+
+}
+
+.presentacion-avisos img {
+
+    width: 100%;
+
+    max-width: 300%;
+
+    height: 120px;
+
+    object-fit: contain;
+
+    margin: 10px;
+
+}
+
+.texto-avisos h2 {
+
+    font-size: clamp(25px, 3vw, 36px);
+
+    color: #7B0D26;
+
+    margin: 0 0 15px;
+
+}
+
+.texto-avisos p {
+
+    font-size: 18px;
+
+    color: black;
+
+    line-height: 1.5;
+
+}
+
+/* LÍNEA SEPARADORA */
+
+.linea-separadora {
+
+    width: 105%;
+    height: 2.5px;
+    background-color: black;
+    margin: 15px 0 30px;
+    margin-left: calc(51.5% - 50vw);
+
+}
+
+/* CONTENIDO INFERIOR */
+
+.contenido-avisos {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+
+}
+
+/* TARJETAS DE AVISOS */
+
+.lista-avisos {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+.tarjeta-aviso {
+
+    border: 2px solid #7B0D26;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    min-height: 170px;
+
+    position: relative;
+
+    overflow: visible;
+
+    min-width: 0;
+}
+
+.tarjeta-aviso h3 {
+
+    color: #7B0D26;
+
+    font-size: 20px;
+
+    margin-top: 0;
+
+}
+
+.tarjeta-aviso p {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: black;
+
+    overflow-wrap: anywhere;
+
+    white-space: normal;
+
+}
+
+.tarjeta-aviso span {
+
+    font-size: 13px;
+
+    color: #7B0D26;
+
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+
+    margin-left: 10px;
+
+}
+
+/* Tarjetas de avisos */
+.tarjeta-aviso {
+    position: relative;
+    overflow: visible;
+    min-width: 0;
+}
+
+.tarjeta-aviso .descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+
+/* Mostrar información */
+.tarjeta-aviso.abierto .descripcion {
+    display: block;
+    overflow: visible;
+}
+
+/* Botón */
+.boton-ver-mas {
+    background-color: #7B0D26;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+
+/* BUSCADOR */
+
+.buscador-avisos {
+
+    border: 2px solid #7B0D26;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    background-color: white;
+}
+
+.buscador-avisos h3 {
+
+    color: #7B0D26;
+
+    text-align: center;
+
+}
+
+.campo-busqueda {
+
+    display: flex;
+
+    width: 100%;
+
+    gap: 5px;
+
+}
+
+.campo-busqueda input {
+
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 12px;
+
+    border: 1px solid #777777;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+}
+
+.campo-busqueda button {
+
+    background-color: #7B0D26;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+}
+
+#resultadoBusqueda {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+#resultadoBusqueda p {
+
+    font-size: 14px;
+
+}
+
+
+.boton-inicio {
+
+    background-color: white;
+
+    color: #7B0D26;
+
+    padding: 10px 16px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+
+}
+
+
+.ola-inferior {
+
+    width: 100%;
+
+    height: 100px;
+
+    overflow: hidden;
+
+    background-color: white;
+
+}
+
+.ola-inferior svg {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+}

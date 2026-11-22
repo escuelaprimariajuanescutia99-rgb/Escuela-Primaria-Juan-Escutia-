@@ -1,0 +1,255 @@
+/* CONTENEDOR PRINCIPAL */
+
+.pagina-galeria {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 25px 10px;
+}
+
+/* PRESENTACIÓN */
+
+.presentacion-galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.icono-camara img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.texto-presentacion h2 {
+    color: #7B0D26;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.texto-presentacion p {
+    font-size: 17px;
+    color: black;
+}
+
+/* DISTRIBUCIÓN DE LAS DOS COLUMNAS */
+
+.contenido-galeria {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* PANEL DE BÚSQUEDA */
+
+.panel-busqueda {
+    border: none;
+    border-right: 2px solid black;
+    border-radius: 0;
+    padding: 18px 25px 18px 18px;
+    min-height: 400px;
+}
+
+.panel-busqueda h3 {
+    color: #7B0D26;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.buscador-fotos {
+    display: flex;
+    gap: 5px;
+}
+
+.buscador-fotos input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #7B0D26;
+    border-radius: 6px;
+    outline: none;
+}
+
+.buscador-fotos button {
+    background: #7B0D26;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.resultados-busqueda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.resultados-busqueda img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.resultados-busqueda p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* CATEGORÍAS */
+
+.categorias-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    background: white;
+    color: #7B0D26;
+    border: 2px solid #7B0D26;
+    border-radius: 7px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.categoria.activa,
+.categoria:hover {
+    background: #7B0D26;
+    color: white;
+}
+
+/* ÁLBUMES */
+
+.album {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.album.activo {
+    display: grid;
+}
+
+.album img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #7B0D26;
+}
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .pagina-galeria {
+        width: 100%;
+        padding: 15px 12px;
+    }
+
+    .presentacion-galeria {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icono-camara img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .texto-presentacion h2 {
+        font-size: 26px;
+    }
+
+    .texto-presentacion p {
+        font-size: 14px;
+    }
+
+    .contenido-galeria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .categorias-galeria {
+        justify-content: center;
+    }
+
+    .categoria {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .album {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .album img {
+        height: 125px;
+    }
+
+}
+
+/* Visor de imágenes */
+.visor-imagen {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.visor-imagen img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.cerrar-visor {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.linea-separadora3 {
+    color: black;
+    height: 3px;
+    width: 99%;
+    background-color: black;
+    position: absolute;
+    top: 65%;
+    margin-left: calc(50% - 52vw);
+}
+
+.decoracion-inferior {
+    width: 99%;
+    height: 100px;
+    position: absolute;
+    margin-top: 30px;
+    transform: translate(-30px);
+    overflow: hidden;
+}
+
+.decoracion-inferior svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

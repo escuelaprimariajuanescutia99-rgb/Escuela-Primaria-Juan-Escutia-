@@ -1,0 +1,326 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+
+.encabezado {
+
+    background-color: #7B0D26;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 30px;
+    gap: 20px;
+
+}
+
+.encabezado img {
+
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+
+}
+
+
+
+.nombre-escuela {
+
+    flex: 1;
+
+}
+
+
+.menu {
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px;
+
+}
+
+.menu a {
+
+    color: #7B0D26;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    color: black;
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .encabezado {
+
+        padding: 12px;
+
+    }
+
+    .encabezado img {
+
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .nombre-escuela h1 {
+
+        font-size: 20px;
+
+    }
+
+    .imagen-principal img {
+        width: 90%;
+       
+    }
+
+    .imagen-principal h1 { 
+        font-size: 22px;
+
+    }
+
+    .imagen-principal p {
+        font-size: 15px;
+
+    }
+
+    .menu {
+
+        gap: 15px;
+
+    }
+
+    .menu a {
+
+        font-size: 13px;
+
+    }
+
+    
+
+}
+
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    
+}
+
+.boton-menu {
+    margin-left: auto;
+    flex-shrink: 0;
+
+    background-color: #ffffff;
+    color: black;
+    border: black;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opciones-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.opciones-menu a {
+    display: block;
+    padding: 12px;
+    color: #7B0D26;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.opciones-menu a:hover {
+    background-color: #f2e5e9;
+}
+
+.opciones-menu.activo {
+    display: block;
+}
+
+.imagen-principal { 
+    width: 100;
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+.imagen-principal img { 
+    width: 100%;
+    max-width: 650%;
+    height: auto;
+    aspect-ratio: 25 / 9;
+    object-fit: cover;
+    
+}
+
+.imagen-principal h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 60px;
+    left: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  
+}
+
+.imagen-principal p {
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 3px 3px 6px black;
+   
+}
+
+.linea-separadora2 {
+    width: 99%;
+    height: 4px;
+    background-color: black;
+    margin: 15px 0 30px;
+    position: absolute;
+    top: 99%;
+}
+
+
+.accesos-directos {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+}
+
+/* DISEÑO DE LOS BOTONES */
+
+.boton-acceso {
+
+    background-color: white;
+
+    border: 2px solid black;
+
+    border-radius: 15px;
+
+    min-height: 150px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s;
+
+}
+
+/* IMÁGENES DE LOS BOTONES */
+
+.boton-acceso img {
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+
+}
+
+/* TEXTO DE LOS BOTONES */
+
+.boton-acceso p {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+
+.boton-acceso:hover {
+
+    background-color: #7B0D26;
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+.decoracion-inferior {
+    width: 99%;
+    height: 100px;
+    position: absolute;
+    margin-top: 30px;
+    transform: translate(-0.5px);
+    overflow: hidden;
+}
+
+.decoracion-inferior svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avisos - Escuela Juan Escutia</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="avisos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <img src="img/logo escuela juan escutia.png"
+             alt="Escudo de la escuela">
+
+        <div class="nombre-escuela">
+
+            <h1>Escuela Primaria “Juan Escutia”</h1>
+
+        </div>
+
+
+    <nav class="menu">
+
+<button class="boton-menu"
+onclick="mostrarMenu()">☰</button>
+
+<div class="opciones-menu"
+
+id="opcionesMenu">
+
+
+        <a href="index.html">Inicio</a>
+
+        <a href="avisos.html">Avisos</a>
+
+        <a href="galeria de fotos.html">Galería de fotos</a>
+
+        <a href="nosotros.html">Nosotros</a>
+
+        <a href="contacto.html">Contacto</a>
+
+    </div>
+
+    </nav>
+
+    </header>
+
+    <main class="pagina-avisos">
+
+        <section class="presentacion-avisos">
+
+            <img src="img/megafono 1.jpg" alt="Escudo escolar">
+
+            <div class="texto-avisos">
+                <h2>Avisos Importantes</h2>
+
+                <p>
+                    Consulta aquí los comunicados, reuniones
+                    y novedades de nuestra escuela.
+                </p>
+            </div>
+
+            <img src="img/megafono 2.jpg" alt="Instalaciones escolares">
+
+        </section>
+
+        <div class="linea-separadora"></div>
+
+        <section class="contenido-avisos">
+
+            <div class="lista-avisos">
+
+                <article class="tarjeta-aviso">
+                    <h3>Reunión de Padres</h3>
+                    <p class="descripcion"> 
+                    Aqui se colocara toda la informacion que desee colocar.
+                    </p>
+                    <span>Fecha: Por confirmar</span>
+
+                    <button class="boton-ver-mas"
+                    onclick="mostrarMas (this)">Ver más
+                </button>
+
+                </article>
+
+                <article class="tarjeta-aviso">
+                    <h3>Evento Escolar</h3>
+                    <p class="descripcion"> 
+                        Aqui se colocara toda la informacion que desee colocar.
+                    </p>
+                    <span>Fecha: Por confirmar</span>
+
+                    <button class="boton-ver-mas"
+                    onclick="mostrarMas (this)">Ver más
+                </button>
+
+                </article>
+
+                <article class="tarjeta-aviso">
+                    <h3>Suspensión de Clases</h3>
+                    <p class="descripcion"> 
+                        Aqui se colocara toda la informacion que desee colocar.
+                    </p>
+                    <span>Fecha: Por confirmar</span>
+
+                    <button class="boton-ver-mas"
+                    onclick="mostrarMas (this)">Ver más
+                </button>
+                </article>
+
+                <article class="tarjeta-aviso">
+                    <h3>Entrega de Boletas</h3>
+                   <p class="descripcion"> 
+                        Aqui se colocara toda la informacion que desee colocar.
+                    </p>
+                    <span>Fecha: Por confirmar</span>
+
+                    <button class="boton-ver-mas"
+                    onclick="mostrarMas (this)">Ver más
+                </button>
+                </article>
+
+                <article class="tarjeta-aviso">
+                    <h3>????</h3>
+                    <p class="descripcion"> 
+                        Aqui se colocara toda la informacion que desee colocar.
+                    </p>
+                    <span>Fecha: Por confirmar</span>
+
+                    <button class="boton-ver-mas"
+                    onclick="mostrarMas (this)">Ver más
+                </button>
+
+                
+                </article>
+
+                
+            </div>
+
+            <aside class="buscador-avisos">
+
+                <h3>Buscar avisos</h3>
+
+                <div class="campo-busqueda">
+                    <input
+                        type="text"
+                        id="buscarAviso"
+                        placeholder="Escribe para buscar..."
+                    >
+
+                    <button type="button" onclick="buscarAvisos()">
+                        🔍
+                    </button>
+                </div>
+
+                <div id="resultadoBusqueda">
+                    <h3>Resultado de búsqueda</h3>
+                    <p>Escribe una palabra para encontrar un aviso.</p>
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <div class="ola-inferior">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path
+                d="M0,70 C240,150 480,0 720,70 C960,140 1200,10 1440,70 L1440,150 L0,150 Z"
+                fill="#7B0D26"/>
+        </svg>
+    </div>
+<script src="script.js"></script>
+<script src="avisos.js"></script>
+</body>
+
+</html>

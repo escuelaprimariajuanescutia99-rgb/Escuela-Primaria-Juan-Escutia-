@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeria de fotos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria de fotos.css">
+
+</head>
+
+<body>
+    
+    <header class="encabezado">
+
+        <img src="img/logo escuela juan escutia.png"
+             alt="Escudo de la escuela">
+
+        <div class="nombre-escuela">
+
+            <h1>Escuela Primaria “Juan Escutia”</h1>
+
+        </div>
+
+
+    <nav class="menu">
+
+<button class="boton-menu"
+onclick="mostrarMenu()">☰</button>
+
+<div class="opciones-menu"
+
+id="opcionesMenu">
+
+
+        <a href="index.html">Inicio</a>
+
+        <a href="avisos.html">Avisos</a>
+
+        <a href="galeria de fotos.html">Galería de fotos</a>
+
+        <a href="nosotros.html">Nosotros</a>
+
+        <a href="contacto.html">Contacto</a>
+
+    </div>
+
+    </nav>
+
+    </header>
+    
+<main class="pagina-galeria">
+
+    <!-- PRESENTACIÓN -->
+    <section class="presentacion-galeria">
+
+        <div class="icono-camara">
+            <img src="img/galeria de fotos.jpg" alt="Cámara">
+        </div>
+
+        <div class="texto-presentacion">
+            <h2>Galería de Fotos</h2>
+
+            <p>
+                Conoce las actividades, eventos y momentos
+                de nuestra escuela.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="contenido-galeria">
+
+        <!-- COLUMNA IZQUIERDA: BUSCADOR -->
+        <aside class="panel-busqueda">
+
+            <h3>Buscar fotos</h3>
+
+            <div class="buscador-fotos">
+
+                <input
+                    type="text"
+                    id="buscarFoto"
+                    placeholder="Buscar fotografías..."
+                >
+
+                <button id="botonBuscar" type="button">
+                    Buscar
+                </button>
+
+            </div>
+
+            <div id="resultadosBusqueda" class="resultados-busqueda">
+
+                <p class="mensaje-busqueda">
+                    Aquí aparecerán las fotografías encontradas.
+                </p>
+
+            </div>
+
+        </aside>
+
+        <!-- COLUMNA DERECHA: ÁLBUMES -->
+        <section class="panel-albumes">
+
+            <!-- CATEGORÍAS -->
+            <nav class="categorias-galeria">
+
+                <button class="categoria activa"
+                    data-categoria="plantel">
+                    Plantel
+                </button>
+
+                <button class="categoria"
+                    data-categoria="eventos">
+                    Eventos
+                </button>
+
+                <button class="categoria"
+                    data-categoria="festivales">
+                    Festivales
+                </button>
+
+                <button class="categoria"
+                    data-categoria="deportes">
+                    Deportes
+                </button>
+
+                <button class="categoria"
+                    data-categoria="actividades">
+                    Actividades
+                </button>
+
+            </nav>
+
+            <!-- FOTOGRAFÍAS -->
+            <div class="galeria-imagenes">
+
+                <div class="album activo" data-album="plantel">
+
+                    <img src="img/fachada de la escuela.jpg"
+                        alt="Entrada del plantel"
+                        data-nombre="fachada de la escuela">
+
+                    <img src="img/explanada de la escuela.jpg"
+                        alt="Explanada de la escuela"
+                        data-nombre="Explanada de la escuela">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                </div>
+
+                <div class="album" data-album="eventos">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">    
+
+                </div>
+
+                <div class="album" data-album="festivales">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre=""> 
+
+                </div>
+
+                <div class="album" data-album="deportes">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre=""> 
+
+                </div>
+
+                <div class="album" data-album="actividades">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre="">
+
+                    <img src="img/"
+                        alt=""
+                        data-nombre=""> 
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <div id="visorImagen" class="visor-imagen">
+    <span id="cerrarVisor" class="cerrar-visor">&times;</span>
+    <img id="imagenAmpliada" src="" alt="Fotografía ampliada">
+</div>
+
+<div class="linea-separadora3"></div>
+
+<div class="decoracion-inferior">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,70 C240,150 480,0 720,70 C960,140 1200,10 1440,70 L1440,150 L0,150 Z"
+        fill="#7B0D26"/>
+    </svg>
+</div>
+
+</main>
+
+
+    <script src="galeria de fotos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
