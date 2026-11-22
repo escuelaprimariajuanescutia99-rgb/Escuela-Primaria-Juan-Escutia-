@@ -165,3 +165,119 @@
     height: 100%;
     display: block;
 }
+
+/* ==================================
+   CONTACTO - DISEÑO PARA CELULARES
+================================== */
+
+@media (max-width: 600px) {
+
+    .pagina-contacto {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .presentacion-contacto {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .icono-contacto img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .texto-presentacion1 h2 {
+        font-size: 34px;
+    }
+
+    .texto-presentacion1 p {
+        font-size: 16px;
+    }
+
+    .titulo-informacion {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 0;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .titulo-informacion h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .cuadro-izquierdo {
+        width: 100%;
+        height: auto;
+        min-height: 145px;
+        margin: 0;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 65px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cuadro-izquierdo img {
+        width: 60px;
+        height: 60px;
+        position: static;
+        grid-row: 1 / 3;
+    }
+
+    .cuadro-izquierdo h2 {
+        position: static;
+        margin: 0;
+        font-size: 19px;
+    }
+
+    .cuadro-izquierdo p {
+        position: static;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .titulo-ubicacion {
+        width: 100%;
+        height: auto;
+        margin: 25px 0 0;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .titulo-ubicacion h2 {
+        margin: 0;
+        font-size: 19px;
+    }
+
+    .mapa-escuela {
+        width: 100%;
+        max-width: 100%;
+        height: 320px;
+        margin: 0;
+        position: relative;
+    }
+
+    .mapa-escuela iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .decoracion-contacto {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        margin-top: 25px;
+        transform: none;
+    }
+
+}
