@@ -452,3 +452,130 @@ body {
     }
 
 }
+
+/* AJUSTES PARA CELULARES */
+@media screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* ENCABEZADO */
+    .encabezado {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .encabezado img {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+    }
+
+    .nombre-escuela {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .nombre-escuela h1 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .menu {
+        padding: 0;
+        flex-shrink: 0;
+    }
+
+    .boton-menu {
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+    }
+
+    .opciones-menu {
+        right: 0;
+        top: 55px;
+    }
+
+    /* IMAGEN PRINCIPAL */
+    .imagen-principal {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .imagen-principal img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .imagen-principal h1 {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        right: 5%;
+        margin: 0;
+        font-size: 25px;
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .imagen-principal p {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        right: 5%;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    /* ACCESOS DIRECTOS */
+    .accesos-directos {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        width: calc(100% - 32px);
+        margin: 25px auto;
+    }
+
+    .boton-acceso {
+        min-width: 0;
+        min-height: 150px;
+        padding: 12px 8px;
+    }
+
+    .boton-acceso img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .boton-acceso p {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* DECORACIÓN INFERIOR */
+    .decoracion-inferior {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        margin: 30px 0 0;
+        transform: none;
+    }
+}
